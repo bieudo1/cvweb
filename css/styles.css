@@ -10,6 +10,13 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@font-face {
+  font-family: F;
+  src: url("./assets/font/UTM Avo.ttf") format("truetype"), url("./assets/font/UTM Avo.eot#iefix") format("embedded-opentype"),
+    url("./assets/font/UTM Avo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -72,8 +79,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:"UTM Avo" ;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -417,8 +423,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "UTM Avo";
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -10714,6 +10719,11 @@ section.resume-section .button.expanded {
 .btn-register:hover {
   text-decoration: none;
 }
+.clip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .gg-form {
   text-align: center;
 }
@@ -10751,6 +10761,9 @@ section.resume-section .button.expanded {
   font-size: 2em;
   color: #000;
   font-weight: bold;
+}
+.nav-logo {
+  width: 6%;
 }
 @media (max-width: 576px) {
   .textbook-title {
